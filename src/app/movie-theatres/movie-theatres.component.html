@@ -1,0 +1,22 @@
+<div class="container">
+<div class="row banner">
+<div class="thumbnail">
+    <img src="assets/images/{{movie.name}}-banner.jpg" class="img-rounded" alt="{{movie.name}}" style="width:100%;">
+    <div class="caption">
+        <span class="label label-info">{{movie.name}}</span>
+        <br>
+        <span class="label label-default">{{movie.language}}</span>
+    </div>
+</div>
+</div>
+<div class="row">
+<ul class="list-group">
+    <li class="list-group-item" *ngFor = "let theatreShow of theatreShows">
+        <b>{{theatreShow.theatreId.name}}</b>
+        <span class="label label-success" *ngFor ="let show of theatreShow.shows">
+                {{show.showTime}}
+        </span>    
+    </li>
+</ul>
+</div>
+</div>

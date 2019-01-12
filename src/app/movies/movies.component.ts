@@ -1,6 +1,6 @@
 import { Movie } from 'src/models/Movie';
-import { MovieService } from './../movie.service';
 import { Component, OnInit } from '@angular/core';
+import { ShowtimeService } from '../Service/showtime.service';
 
 @Component({
   selector: 'movies-list',
@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class MoviesComponent implements OnInit {
     movies : Movie[];
 
-  constructor(movieService : MovieService) {
+  constructor(movieService : ShowtimeService) {
       this.movies = movieService.movies;
    }
 

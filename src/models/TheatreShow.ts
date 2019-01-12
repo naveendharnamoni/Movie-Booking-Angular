@@ -5,7 +5,7 @@ export class TheatreShow{
     /**
      *
      */
-    constructor(public theatreId: Theatre,public showId : ShowTimings, movieId : Movie , startDate : Date , endDate : Date ) {
+    constructor(public theatreId: Theatre,public shows : ShowTimings[],public movieId : Movie ,public startDate : Date ,public endDate : Date ) {
 
     }
 }

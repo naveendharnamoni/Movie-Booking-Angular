@@ -2,7 +2,7 @@
   <div class="row">
       <div *ngFor="let movie of movies" class="col-sm-2">
         <div class="thumbnail">
-          <a href="#">
+          <a href="TheatresList/{{movie.id}}">
             <img src="assets/images/{{movie.name}}.jpg" alt="{{movie.name}}" style="width:100%">
             <div class="caption">
               <span class="label label-info">{{movie.name}}</span>
